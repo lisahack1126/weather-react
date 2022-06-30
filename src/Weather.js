@@ -15,5 +15,15 @@ export default function Weather(props) {
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${props.city}&appid=${apiKey}&units=imperial`;
 
   axios.get(apiUrl).then(handleResponse);
-  return <Audio height="100" width="100" color="blue" ariaLabel="loading" />;
+  return (
+    <div className="loader-spinner">
+      <Audio
+        height="100"
+        width="100"
+        color="blue"
+        ariaLabel="loading"
+        class="loader-spinner"
+      />
+    </div>
+  );
 }
