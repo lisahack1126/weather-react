@@ -7,7 +7,7 @@ function App() {
     <div className="App">
       <div className="App">
         <h1>NPM</h1>
-        <Weather city="Louisville" />
+        <Weather city="Lexington" />
       </div>
     </div>
   );
